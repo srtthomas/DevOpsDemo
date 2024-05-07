@@ -1,0 +1,151 @@
+{
+  "id": "a086f64f-930e-4d48-be00-f0f288aa2e90",
+  "version": "2.0",
+  "name": "Integration Tests",
+  "url": "http://localhost:4200",
+  "tests": [{
+    "id": "a6567bcd-f91f-4d54-86bf-c2c6af2c4f63",
+    "name": "Titel überprüfen",
+    "commands": [{
+      "id": "95d6759e-cfd8-4428-acb6-f232386061c2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f86647e-9091-4307-b76a-6b5913021011",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "913x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7edc6456-ec69-4d4c-ba1c-d1849f31a986",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tile-alizarin",
+      "targets": [
+        ["css=.tile-alizarin", "css:finder"],
+        ["xpath=//span[2]/span/span/path-button-group/span/div/span/span/path-button/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5003ebe5-d398-4e7b-9cc1-34a399233d13",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.tile-orange > .h4",
+      "targets": [
+        ["css=.tile-orange > .h4", "css:finder"],
+        ["xpath=//path-button/a/div/div", "xpath:position"]
+      ],
+      "value": "Neuer Wein"
+    }]
+  }, {
+    "id": "e415d4d3-0b17-416f-a377-ce828b73b6a5",
+    "name": "Test ToDo",
+    "commands": [{
+      "id": "fb493afa-67fc-458c-93c6-335c586a3df5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61b6d822-d793-42af-a65b-6084e623a71d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "916x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a21e3a6-c5e3-486d-8746-5689afca7c19",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tile-alizarin",
+      "targets": [
+        ["css=.tile-alizarin", "css:finder"],
+        ["xpath=//span[2]/span/span/path-button-group/span/div/span/span/path-button/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5ce0b47-9b28-4cb2-956f-8f9fbfa5dba3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.backbutton",
+      "targets": [
+        ["css=.backbutton", "css:finder"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6780d31d-6e46-4c20-80d0-b1ee73f7e3b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tile-wet-asphalt",
+      "targets": [
+        ["css=.tile-wet-asphalt", "css:finder"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab0defbd-a9e0-460e-bcd1-55a7000c1fab",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.tile-green > .h4",
+      "targets": [
+        ["css=.tile-green > .h4", "css:finder"],
+        ["xpath=//path-button/a/div/div", "xpath:position"]
+      ],
+      "value": "Neues ToDo"
+    }]
+  }, {
+    "id": "c829dbdd-8b96-4f77-8bd5-b9aec664ff85",
+    "name": "Breadcrumb überprüfen",
+    "commands": [{
+      "id": "15cb5a6e-0bf3-438a-b964-8e73751a9bac",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d4f017e-ca24-478d-9400-dae4699e4ff7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "915x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "058148cf-d8dd-4a3d-a76e-2ae7d46f53f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tile-alizarin",
+      "targets": [
+        ["css=.tile-alizarin", "css:finder"],
+        ["xpath=//span[2]/span/span/path-button-group/span/div/span/span/path-button/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b29e643e-8802-4aa0-96f6-32472dca62d0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.breadcrumb",
+      "targets": [
+        ["css=.breadcrumb", "css:finder"],
+        ["xpath=//ol", "xpath:position"]
+      ],
+      "value": "Weine"
+    }]
+  }],
+  "suites": [{
+    "id": "75b0f16d-6a19-4b6f-8384-1ee99e6be81f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a6567bcd-f91f-4d54-86bf-c2c6af2c4f63"]
+  }],
+  "urls": ["http://localhost:4200/"],
+  "plugins": []
+}
