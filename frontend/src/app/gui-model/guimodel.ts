@@ -150,6 +150,22 @@ export class GuiModel {
                             "page": "WeinPage",
                             "width": 2,
                         },
+                        {
+                            "type": "button",
+                            "name": { default: "Softgetränke" },
+                            "icon": "fa-solid fa-wine-bottle",
+                            "color": "green",
+                            "page": "WeinPage",
+                            "width": 2,
+                        },
+                        {
+                            "type": "button",
+                            "name": { default: "Branntwein" },
+                            "icon": "fa-solid fa-wine-bottle",
+                            "color": "blue",
+                            "page": "WeinPage",
+                            "width": 2,
+                        },
                     ]
                 },
                 {
